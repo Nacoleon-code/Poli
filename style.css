@@ -1,0 +1,105 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background-color: hsl(49, 100%, 80%);
+    color: hsl(0, 0%, 0%);
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+#topics h2 {
+    text-align: center; /* Center the "Debate Topics" title */
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.topic {
+    background-color: hsl(49, 100%, 80%);
+    border: 3px solid hsl(0, 0%, 0%); /* Black border */
+    padding: 40px 10px; /* Increased padding to increase the length */
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold; /* Make the text bold */
+}
+
+.topic:hover {
+    background-color: #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+
+/* Add this to the existing CSS */
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 40px; /* Space between the buttons */
+    margin-top: 50px;
+}
+
+button {
+    font-size: 70px; /* Increase font size for larger buttons */
+    padding: 40px 80px; /* Increase padding for larger buttons */
+    border: none;
+    color: white;
+    border-radius: 10px; /* More rounded corners for a larger button */
+    cursor: pointer;
+    width: 500px; /* Set a fixed width for both buttons */
+    height: 200px; /* Set a fixed height for both buttons */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+button#debate-button {
+    background-color: hsl(120, 60%, 50%); /* Light green for DEBATE */
+}
+
+button#back-button {
+    background-color: hsl(0, 80%, 50%); /* Red for GO BACK */
+}
+
+button:hover {
+    opacity: 0.8;
+}

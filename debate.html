@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate - Topic 1</title>
+    <link rel="stylesheet" href="debate.css">
+</head>
+<body>
+    <div id="user-icon" class="circle">Me</div>
+    <div id="peer-icon" class="circle">Peer</div>
+    <div id="chat-box">
+        <div id="message-container"></div>
+        <input id="typing-box" type="text" placeholder="Type your message...">
+        <button id="send-button">Send</button>
+    </div>
+    <button id="mute-button">Mute</button>
+    <button id="end-debate">END DEBATE</button>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to exit the debate?</p>
+            <button id="stay-button">STAY</button>
+            <button id="exit-button">EXIT</button>
+        </div>
+    </div>
+
+    <script src="debate.js"></script>
+</body>
+</html>
